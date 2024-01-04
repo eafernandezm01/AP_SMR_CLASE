@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>AP_SMR_CLASE</title>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>ETIQUETAS HTML</h1>
+    </header>
+    <nav>
+        <a href="./01-elementosTexto.html">Elementos de texto</a>
+        <a href="./02-listas.html">Listas</a>
+        <a href="./03-enlaces.html">Enlaces</a>
+        <a href="./04-media.html">Media</a>
+        <a href="./05-tablas.html">Tablas</a>
+        <a href="./06-formularios.html">Formularios</a>
+    </nav>
+    <main>
+        <h2 class="titulo">MEDIA</h2>
+        <div class="section">
+            <h3>IMÁGENES</h3>
+            <p>La etiqueta &lt;img&gt; (no tiene cierre), permite insertar una imagen ya sea interna o externa.
+            </p>
+            <div class="ejemplo">
+                <code>
+                    &lt;img src="https://cdn.pixabay.com/photo/2016/10/18/21/22/beach-1751455_1280.jpg" alt="Imagen de Playa, Sol y Mar. " width="200" height="100" &gt;<br>
+                </code>
+                <div class="resultado-hidden">
+                    <img src="https://cdn.pixabay.com/photo/2016/10/18/21/22/beach-1751455_1280.jpg"
+                        alt="Imagen de Playa, Sol y Mar." width="200" height="100">
+                </div>
+            </div>
+            <p>El atributo <span class="violeta">alt</span> permite establecer un texto alternativo por si no se carga
+                la imagen, además con los atributos <span class="violeta">width</span> y <span
+                    class="violeta">height</span> podemos establecer un tamaño.</p>
+        </div>
+        <div class="section">
+            <h3>MARCO Y TÍTULO DE UNA IMAGEN</h3>
+            <p>La etiqueta &lt;figure&gt; permite crear un marco de una imagen. Dentro de la etiqueta incluimos la
+                etiqueta, &lt;img&gt; para poner la imagen y &lt;figcaption&gt; para establecer la descripción
+            </p>
+            <div class="ejemplo">
+                <code>
+                    &lt;figure&gt;<br>
+                    &lt;img src="https://cdn.pixabay.com/photo/2016/10/18/21/22/beach-1751455_1280.jpg" alt="Imagen de Playa, Naure y Mar. De uso gratuito." width="400" height="100"&gt;<br>
+                    &lt;figcaption&gt;Imagen de Playa, Naure y Mar. De uso gratuito.&lt;/figcaption&gt;<br>
+                    &lt;/figure&gt;<br>
+                </code>
+                <div class="resultado-hidden">
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2016/10/18/21/22/beach-1751455_1280.jpg"
+                            alt="Imagen de Playa, Naure y Mar. De uso gratuito." width="400" height="100">
+                        <figcaption>Imagen de Playa, Naure y Mar. De uso gratuito.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>AUDIO</h3>
+            <p>La etiqueta &lt;audio&gt; permite insertar un audio con la etiqueta &lt;source&gt; y reproducirlo.
+            </p>
+            <div class="ejemplo">
+                <code>
+                    &lt;audio controls&gt;<br>
+                    &lt;source src="./audio/deep-strange-whoosh-183845.mp3"&gt;<br>
+                    Your browser does not support the audio element.<br>
+                    &lt;/audio&gt;<br>
+                </code>
+                <div class="resultado-hidden">
+                    <audio controls>
+                        <source src="./audio/deep-strange-whoosh-183845.mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>VIDEO</h3>
+            <p>La etiqueta &lt;video&gt; permite insertar un vídeo con la etiqueta &lt;source&gt; y reproducirlo.
+            </p>
+            <div class="ejemplo">
+                <code>
+                    &lt;video width="300" height="200" controls&gt;<br>
+                    &lt;source src="./video/188778 (720p).mp4"&gt;<br>
+                    Your browser does not support the video tag.<br>
+                    &lt;/video&gt;<br>
+                </code>
+                <div class="resultado-hidden">
+                    <video width="300" height="200" controls>
+                        <source src="./video/188778 (720p).mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                </div>
+            </div>
+            <p>Con los atributos <span class="violeta">width</span> y <span
+                class="violeta">height</span> podemos establecer un tamaño.</p>
+        </div>
+
+        <div class="section">
+            <h3>VIDEO DE YOUTUBE</h3>
+            <p>Para insertar un vídeo de youtube debemos darle a compartir y seleccionar el icono &lt;&gt;, copiamos y pegamos en nuestro html.
+            </p>
+            <div class="ejemplo">
+                <code>
+                    &lt;iframe width="300" height="200" src="https://www.youtube.com/embed/eR-utnCGvuc?si=0QzA7Mpm53wCrxz3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;
+                </code>
+                <div class="resultado-show">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/eR-utnCGvuc?si=0QzA7Mpm53wCrxz3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <p>Con los atributos <span class="violeta">width</span> y <span
+                class="violeta">height</span> podemos establecer un tamaño.</p>
+        </div>
+    
+    </main>
+    <footer>
+        <p>© 2024 Eva Angelina Fernández Muñoz</p>
+    </footer>
+</body>
+
+</html>

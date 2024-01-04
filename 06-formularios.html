@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>AP_SMR_CLASE</title>
+    <style>
+        .ejemplo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .ejemplo>div {
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ETIQUETAS HTML</h1>
+    </header>
+    <nav>
+        <a href="./01-elementosTexto.html">Elementos de texto</a>
+        <a href="./02-listas.html">Listas</a>
+        <a href="./03-enlaces.html">Enlaces</a>
+        <a href="./04-media.html">Media</a>
+        <a href="./05-tablas.html">Tablas</a>
+        <a href="./06-formularios.html">Formularios</a>
+    </nav>
+    <main>
+        <h2 class="titulo">FORMULARIO</h2>
+        <div class="section">
+            <h3>FORMULARIO</h3>
+            <p>Para definir un formulario en HTML usamos la etiqueta &lt;form&gt;</p>
+            <p>Algunos de sus atributos más importantes:</p>
+            <ul>
+                <li>action: define la acción que se realizará cuando se envíe el formulario. </li>
+                <li>target: dónde muestra la respuesta. (_blank, _self...). Por defecto, _self</li>
+                <li>method: Los datos del formulario se pueden enviar como:
+                    <ul>
+                        <li>method="get": Por defecto, los parámetros van por la URL:
+                            https://www.miweb.com/alta.php?dni=12345678Z&nombre=UsuarioX</li>
+                        <li>method="post": Internamente, no se muestran en la url.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Dentro del formulario podemos inluir:</p>
+
+            <ul>
+                <li>&lt;label&gt;: Define una etiqueta, normalmente, va asociada a otro elemento, esta asociación se
+                    realiza con el atributo id (atributo único).</li>
+                <li>&lt;input&gt;: Caja para introducir datos en una línea.</li>
+                <li>&lt;textarea&gt;: Caja para introducir datos en varias líneas.</li>
+                <li>&lt;button&gt;: Botón.</li>
+                <li>&lt;select&gt;: Lista desplegable</li>
+                <li>&lt;fieldset&gt;: Agrupa los elementos anteriores y se pone un título con &lt;legend&gt;.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>INPUT</h3>
+            <p>Existen numerosos tipos de &lt;input&gt;, si pones en Visual Studio Code "in", te saldrá muchas
+                opciones...</p>
+            <ul>
+                <li>&lt;input type="text"&gt; define un campo de entrada de texto de una sola línea.</li>
+                <li>&lt;input type="password"&gt; define un campo de contraseña.</li>
+                <li>&lt;input type="search"&gt; define un campo de búsqueda (es como un campo normal sólo que tiene una
+                    x al final para borrar los datos)</li>
+                <li>&lt;input type="hidden"&gt; define un campo de entrada oculto. No se ve a simple vista (en la página
+                    pero sí se ve en las herramientas de desarrollo en el fuente".</li>
+                <li>&lt;input type="date"&gt; define un campo de entrada fecha.</li>
+                <li>&lt;input type="time"&gt;define un campo de entrada hora.</li>
+                <li>&lt;input type="datetime-local"&gt; define un campo de entrada fecha - hora.</li>
+                <li>&lt;input type="month"&gt; define un campo de entrada mes - año.</li>
+                <li>&lt;input type="week"&gt; define un campo de entrada semana - año.</li>
+                <li>&lt;input type="email"&gt; define un campo de entrada email. Valida que tenga @ al enviar el
+                    formulario (submit).</li>
+                <li>&lt;input type="number"&gt; define un campo de entrada numérico. No permite introducir letras. Se
+                    puede establecer un número mínimo y máximo (atributos min y max).</li>
+                <li>&lt;input type="tel"&gt; define un campo de entrada teléfono. Se puede validar teléfono
+                    estableciendo una expresión regular (atributo pattern).</li>
+                <li>&lt;input type="range"&gt; define un campo de entrada númerico mediante un control deslizante. Se
+                    puede establecer un número mínimo y máximo (atributos min y max) y step para definir el valor de
+                    incremento. </li>
+                <li>&lt;input type="color"&gt; define una paleta de colores.</li>
+                <li>&lt;input type="url"&gt; define un campo de entrada url. Algunos navegadores son restrictivos a la
+                    hora de validar la url.</li>
+                <li>&lt;input type="file"&gt; define un campo de entrada para añadir un fichero.</li>
+                <li>&lt;input type="radio"&gt; define un botón de radio.</li>
+                <li>&lt;input type="checkbox"&gt; define una casilla de verificación (puedes pinchar en 0 o más de una
+                    opción)</li>
+                <li>&lt;input type="submit"&gt; define un botón para enviar (submit) datos de formulario al servidor
+                    (donde se especifique en la etiqueta action del form)</li>
+                <li>&lt;input type="image"&gt; define una imagen como botón para enviar (submit). En el atributo src se
+                    define la ruta de la imagen (local o remota).</li>
+                <li>&lt;input type="button"&gt; define un botón. No hace submit del formulario.</li>
+                <li>&lt;input type="reset"&gt; restablecerá todos los valores del formulario a sus valores
+                    predeterminados.</li>
+            </ul>
+            <p>¡Por cierto es una etiqueta que no tiene cierre! </p>
+            <div class="ejemplo">
+                <code>
+                    <a href="https://drive.google.com/file/d/1oG19jmAgzvB8H1w4OHo0b5jipd4lvtdP/view?usp=sharing" target="_blank" rel="noopener noreferrer">https://drive.google.com/file/d/1oG19jmAgzvB8H1w4OHo0b5jipd4lvtdP/view?usp=sharing</a>
+                </code>
+                <div class="resultado-show">
+                    <form>
+                        <label for="input1">Caja texto:</label>
+                        <input type="text" name="input1" id="input1">
+                        <br><br>
+
+                        <label for="input2">Contraseña:</label>
+                        <input type="password" name="input2" id="input2">
+                        <br><br>
+
+
+                        <label for="busca">Buscar:</label>
+                        <input type="search" name="busca" id="busca">
+                        <br><br>
+
+                        <!--OJO este campo no se ve visualmente pero si desde las herramientas de desarrollo. -->
+                        <input type="hidden" name="oculto" id="oculto" value="web">
+
+
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" name="fecha" id="fecha">
+                        <br><br>
+
+                        <label for="hora">Hora:</label>
+                        <input type="time" name="hora" id="hora">
+                        <br><br>
+
+                        <label for="fechahora">Fecha y hora:</label>
+                        <input type="datetime-local" name="fechahora" id="fechahora">
+                        <br><br>
+
+                        <label for="bdaymonth">Mes-año</label>
+                        <input type="month" name="bdaymonth" id="bdaymonth">
+                        <br><br>
+
+                        <label for="week">Semana - año</label>
+                        <input type="week" name="week" id="week">
+                        <br><br>
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                        <br><br>
+
+                        <label for="edad">Edad (0-120):</label>
+                        <input type="number" name="email" id="email" min="0" max="120">
+                        <br><br>
+
+                        <label for="phone">Teléfono:</label>
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]{9}">
+                        <br><br>
+
+                        <label for="vol">Volumen (0-50):</label>
+                        <input type="range" id="vol" name="vol" min="0" max="50">
+                        <br><br>
+
+                        <label for="favcolor">Color:</label>
+                        <input type="color" id="favcolor" name="favcolor">
+                        <br><br>
+
+                        <label for="homepage">Web:</label>
+                        <input type="url" id="homepage" name="homepage">
+                        <br><br>
+
+                        <label for="myfile">Adjunta el fichero:</label>
+                        <input type="file" id="myfile" name="myfile">
+                        <br><br>
+
+                        <!--OJO tienen que tener distinto name!!!-->
+                        <input type="checkbox" name="vehicle1" id="vehicle1" value="Bike">
+                        <label for="vehicle1">Bicicleta</label><br>
+                        <input type="checkbox" name="vehicle2" id="vehicle2" value="Car">
+                        <label for="vehicle2">Coche</label><br>
+                        <input type="checkbox" name="vehicle3" id="vehicle3" value="Boat">
+                        <label for="vehicle3">Barco</label>
+                        <br><br>
+
+                        <!--OJO tienen que tener el mismo name!!!-->
+                        <input type="radio" name="fav_language" id="language1" value="HTML">
+                        <label for="html">HTML</label><br>
+                        <input type="radio" name="fav_language" id="language2" value="CSS">
+                        <label for="css">CSS</label><br>
+                        <input type="radio" name="fav_language" id="language3" value="JavaScript">
+                        <label for="javascript">JavaScript</label>
+                        <br><br>
+
+                        <input type="button" id="btn1" onclick="alert('Es un boton común')" value="Botón">
+                        <br><br>
+                        <input type="image" id="img" src="https://www.w3schools.com/html/img_submit.gif" alt="Submit"
+                            width="48" height="48">
+                        <br><br>
+                        <input type="submit" id="btn2" value="Enviar formulario">
+                        <input type="reset" id="btn3" value="Borrar formulario">
+                        <br><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>TEXTAREA</h3>
+            <p>Campo que permite múltiples líneas, es usado para las descripciones o textos largos.
+                Se puede especificar el tamaño por CSS o atributos (col="20" row="20") </p>
+            <div class="ejemplo">
+                <code>
+                    &lt;textarea name="desc" rows="4" cols="50"&gt;&lt;/textarea&gt;
+                </code>
+                <div class="resultado-show">
+                    <textarea name="desc" rows="4" cols="50"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>DATALIST</h3>
+            <p>Permiten buscar al introducir un valor en el input. Se suelen usar cuando tenemos muchos valores
+                posibles.
+                Se define un input con el atributo list="idDelDataList" que debe tener el mismo nombre que el id del
+                datalist.</p>
+            <div class="ejemplo">
+                <code>
+                    &lt;input list="browsers" name="browser" id="browser"&gt;<br>
+                    &lt;datalist id="browsers"&gt;<br>
+                      &nbsp;&lt;option value="Edge"&gt;<br>
+                      &nbsp;&lt;option value="Firefox"&gt;<br>
+                      &nbsp;&lt;option value="Chrome"&gt;<br>
+                      &nbsp;&lt;option value="Opera"&gt;<br>
+                      &nbsp;&lt;option value="Safari"&gt;<br>
+                    &lt;/datalist&gt;<br>
+                </code>
+                <div class="resultado-show">
+                    <input list="browsers" name="browser" id="browser">
+
+                    <datalist id="browsers">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>SELECT</h3>
+            <p>Usamos la etiqueta: &lt;select&gt; que permite definir una lista desplegable con las opciones marcadas
+                como option.<br>
+                Por defecto al cargar la página, pone como seleccionada la primera, en el caso en que se quiera cambiar,
+                debemos añadir el atributo selected en el option que queramos.
+                <br>Los select pueden ser simples (sólo se puede elegir un option) o múltiples (1 o varios).
+            </p>
+            <p>Sólo podemos seleccionar un valor:</p>
+            <div class="ejemplo">
+                <code>
+                    &lt;select id="cars"&gt;<br>
+                    &nbsp;&lt;option value="volvo"&gt;Volvo&lt;/option&gt;<br>
+                    &nbsp;&lt;option value="saab"&gt;Saab&lt;/option&gt;<br>
+                    &nbsp;&lt;option value="opel"&gt;Opel&lt;/option&gt;<br>
+                    &nbsp;&lt;option value="audi"&gt;Audi&lt;/option&gt;<br>
+                  &lt;/select&gt;<br>
+                </code>
+                <div class="resultado-show">
+                    <select id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+            </div>
+            <p>Para que permita elegir varios elementos debemos añadir en la etiqueta select <span
+                    class="violeta">multiple</span></p>
+            <div class="ejemplo">
+                <code>
+                    &lt;select id="cars" multiple&gt;<br>
+                    &nbsp;&lt;option value="volvo"&gt;Volvo&lt;/option&gt;<br>
+                    &nbsp;&lt;option value="saab"&gt;Saab&lt;/option&gt;<br>
+                    &nbsp;&lt;option value="opel"&gt;Opel&lt;/option&gt;<br>
+                    &nbsp;&lt;option value="audi"&gt;Audi&lt;/option&gt;<br>
+                  &lt;/select&gt;<br>
+                </code>
+                <div class="resultado-show">
+                    <select id="cars" multiple>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>© 2024 Eva Angelina Fernández Muñoz</p>
+    </footer>
+</body>
+
+</html>

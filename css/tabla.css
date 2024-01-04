@@ -1,0 +1,56 @@
+table,
+th,
+td,
+tfoot,
+caption {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-weight: bold;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 8px;
+}
+
+th,
+caption,
+.fil-col {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+caption {
+    font-size: 25px;
+}
+
+.row {
+    background-color: #A569BD;
+
+}
+
+.col {
+    background-color: #48C9B0;
+}
+
+.mix {
+    background-color: #EC7063;
+}
+
+td {
+    background-color: #FCF3CF;
+}
+
+
+.ejemplo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ejemplo>div {
+    margin: 10px 10px;
+}

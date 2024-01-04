@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/tabla.css">
+    <title>AP_SMR_CLASE</title>
+</head>
+
+<body>
+    <header>
+        <h1>ETIQUETAS HTML</h1>
+    </header>
+    <nav>
+        <a href="./01-elementosTexto.html">Elementos de texto</a>
+        <a href="./02-listas.html">Listas</a>
+        <a href="./03-enlaces.html">Enlaces</a>
+        <a href="./04-media.html">Media</a>
+        <a href="./05-tablas.html">Tablas</a>
+        <a href="./06-formularios.html">Formularios</a>
+    </nav>
+    <main>
+        <h2 class="titulo">TABLAS</h2>
+        <div class="section">
+            <h3>TABLAS</h3>
+            <p>Una tabla no es otra cosa más que un medio de organizar datos en filas y columnas.
+                Etiquetas asociadas a las tablas:
+            </p>
+            <ul>
+                <li>&lt;table&gt; define la tabla. Etiqueta principal.</li>
+                <li>&lt;tr&gt; define una fila en la tabla.</li>
+                <li>&lt;th&gt; define una celda de encabezado (cabeza de columna).</li>
+                <li>&lt;td&gt; define una celda de datos.</li>
+                <li>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; Agrupa el contenido cabecera, cuerpo y pie
+                    respectivamente</li>
+                <li>&lt;caption&gt; Define el título de la tabla.</li>
+            </ul>
+            <p>Para combinar celdas por columna o por filas, usaremos los atributos <span
+                    class="violeta">colspan</span>y <span class="violeta">rowspan</span>, que son atributos HTML que se
+                aplican en los td y th, se utilizan para combinar celdas en una tabla, permitiendo que una celda abarque
+                múltiples columnas o filas. Esto es útil cuando deseas crear estructuras más complejas en tu tabla.
+            </p>
+            <div class="ejemplo">
+     
+                <code>
+                    &lt;table&gt;<br>
+                    &nbsp;&lt;thead&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;caption&gt;Usando colspan y rowspan&lt;/caption&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;COL A&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;COL B&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;COL C&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;COL D&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;COL E&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;COL F&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;COL G&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;COL H&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;COL I&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &nbsp;&lt;/thead&gt;<br>
+                    &nbsp;&lt;tbody&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;N/A&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;N/A&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;N/A&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;N/A&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;N/A&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;N/A&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;N/A&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;N/A&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td rowspan="3" class="row"&gt;rowspan="3"&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;N/A&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td rowspan="2" class="row"&gt;rowspan="2"&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td rowspan="2" colspan="2" class="mix"&gt;rowspan="2" colspan="2"&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;N/A&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td colspan="2" class="col"&gt;colspan="2"&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td rowspan="2" class="row"&gt;rowspan="2"&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;N/A&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;N/A&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;N/A&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;N/A&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &nbsp;&lt;/tbody&gt;<br>
+                    &nbsp;&lt;tfoot&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;td colspan="8"&gt;Total&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;td&gt;$3.00&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &nbsp;&lt;/tfoot&gt;<br>
+                    &lt;/table&gt;
+                </code>
+                <div class="resultado-show">
+                    <table>
+                        <thead>
+                            <caption>Usando colspan y rowspan</caption>
+                            <tr>  
+                                <th>COL A</th>
+                                <th>COL B</th>
+                                <th>COL C</th>
+                                <th>COL D</th>
+                                <th>COL E</th>
+                                <th>COL F</th>
+                                <th>COL G</th>
+                                <th>COL H</th>
+                                <th>COL I</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td rowspan="3" class="row">rowspan="3"</td>
+                            </tr>
+                            <tr>
+                                <td>N/A</td>
+                                <td rowspan="2" class="row">rowspan="2"</td>
+                                <td rowspan="2" colspan="2" class="mix">rowspan="2" colspan="2"</td>
+                                <td>N/A</td>
+                                <td colspan="2" class="col">colspan="2"</td>
+                                <td rowspan="2" class="row">rowspan="2"</td>
+                            </tr>
+                            <tr>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                              </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="8">Total</td>
+                            <td>$3.00</td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>© 2024 Eva Angelina Fernández Muñoz</p>
+    </footer>
+</body>
+
+</html>
