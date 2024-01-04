@@ -19,13 +19,16 @@ header>h1 {
 nav {
     background-color: #6743a5;
     padding: 12px;
+    display: flex;
 }
 
 nav>a {
+    flex-direction: row;
     color: #e2d5c1;
     text-decoration: none;
     margin-right: 10px;
 }
+
 
 main {
     padding: 0 5%;
@@ -101,4 +104,25 @@ footer>p {
     color: #000;
     text-align: center;
     border-bottom: 2px solid #000;
+}
+
+@media (max-width: 510px) {
+    nav {
+        flex-direction: column;
+    }
+    nav>a {
+        margin-top: 10px;
+    }
+    .ejemplo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ejemplo>code{
+        max-width: 300px;
+    }
+
+    .ejemplo>div {
+        margin: 10px 10px;
+    }
 }
