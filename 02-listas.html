@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>AP_SMR_CLASE</title>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>ETIQUETAS HTML</h1>
+    </header>
+    <nav>
+        <a href="./01-elementosTexto.html">Elementos de texto</a>
+        <a href="./02-listas.html">Listas</a>
+        <a href="./03-enlaces.html">Enlaces</a>
+    </nav>
+    <main>
+        <h2 class="titulo">LISTAS</h2>
+        <div class="section">
+            <h3>LISTAS ORDENADAS</h3>
+            <p>Para las listas ordenadas se utiliza &lt;ol&gt; y para añadir los items de la lista usamos &lt;li&gt;.
+            </p>
+            <div class="ejemplo">
+                <code>
+                    &lt;ol&gt;<br>
+                    &lt;li&gt;HTML&lt;/li&gt;<br>
+                    &lt;li&gt;CSS&lt;/li&gt;<br>
+                    &lt;li&gt;JS&lt;/li&gt;<br>
+                    &lt;/ol&gt;<br>
+                </code>
+                <div class="resultado-hidden">
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ol>
+                </div>
+            </div>
+            <br>
+            <div class="ejemplo">
+                <code>
+                    &lt;ol&gt;<br>
+                    &lt;li&gt;Item 1<br>
+                        &lt;ol&gt;<br>
+                            &lt;li&gt;Sub-item 1.1&lt;/li&gt;<br>
+                            &lt;li&gt;Sub-item 1.2&lt;/li&gt;<br>
+                        &lt;/ol&gt;<br>
+                    &lt;/li&gt;<br>
+                    &lt;li&gt;Item 2&lt;/li&gt;<br>
+                    &lt;li&gt;Item 3<br>
+                        &lt;ol&gt;<br>
+                            &lt;li&gt;Sub-item 3.1&lt;/li&gt;<br>
+                            &lt;li&gt;Sub-item 3.2&lt;/li&gt;<br>
+                            &lt;li&gt;Sub-item 3.3&lt;/li&gt;<br>
+                        &lt;/ol&gt;<br>
+                    &lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
+                </code>
+                <div class="resultado-hidden">
+                    <ol>
+                        <li>Item 1
+                            <ol>
+                                <li>Sub-item 1.1</li>
+                                <li>Sub-item 1.2</li>
+                            </ol>
+                        </li>
+                        <li>Item 2</li>
+                        <li>Item 3
+                            <ol>
+                                <li>Sub-item 3.1</li>
+                                <li>Sub-item 3.2</li>
+                                <li>Sub-item 3.3</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>LISTAS DESORDENADAS</h3>
+            <p>Para las listas deordenadas se utiliza &lt;ul&gt; y para añadir los items de la lista usamos &lt;li&gt;.
+            </p>
+            <div class="ejemplo">
+                <code>
+                    &lt;ul&gt;<br>
+                    &lt;li&gt;HTML&lt;/li&gt;<br>
+                    &lt;li&gt;CSS&lt;/li&gt;<br>
+                    &lt;li&gt;JS&lt;/li&gt;<br>
+                    &lt;/ul&gt;<br>
+                </code>
+                <div class="resultado-hidden">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="ejemplo">
+                <code>
+                    &lt;ul&gt;<br>
+                    &lt;li&gt;Item 1<br>
+                        &lt;ul&gt;<br>
+                            &lt;li&gt;Sub-item 1.1&lt;/li&gt;<br>
+                            &lt;li&gt;Sub-item 1.2&lt;/li&gt;<br>
+                        &lt;/ul&gt;<br>
+                    &lt;/li&gt;<br>
+                    &lt;li&gt;Item 2&lt;/li&gt;<br>
+                    &lt;li&gt;Item 3<br>
+                        &lt;ul&gt;<br>
+                            &lt;li&gt;Sub-item 3.1&lt;/li&gt;<br>
+                            &lt;li&gt;Sub-item 3.2&lt;/li&gt;<br>
+                            &lt;li&gt;Sub-item 3.3&lt;/li&gt;<br>
+                        &lt;/ul&gt;<br>
+                    &lt;/li&gt;<br>
+                &lt;/ul&gt;<br>
+                </code>
+                <div class="resultado-hidden">
+                    <ul>
+                        <li>Item 1
+                            <ul>
+                                <li>Sub-item 1.1</li>
+                                <li>Sub-item 1.2</li>
+                            </ul>
+                        </li>
+                        <li>Item 2</li>
+                        <li>Item 3
+                            <ul>
+                                <li>Sub-item 3.1</li>
+                                <li>Sub-item 3.2</li>
+                                <li>Sub-item 3.3</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>LISTAS DE DEFINICIÓN</h3>
+            <p>Para las listas de definicion se utiliza &lt;dl&gt;. Para cada definición, usamos &lt;dt&gt; para añadir
+                el término y &lt;dd&gt; para añadir su significado.</p>
+            <div class="ejemplo">
+                <code>
+                    &lt;dl&gt;<br>
+                    &lt;dt&gt;Término 1&lt;/dt&gt;<br>
+                    &lt;dd&gt;Definición 1&lt;/dd&gt;<br>
+                    &lt;dt&gt;Término 2&lt;/dt&gt;<br>
+                    &lt;dd&gt;Definición 2&lt;/dd&gt;<br>
+                    &lt;dt&gt;Término 3&lt;/dt&gt;<br>
+                    &lt;dd&gt;Definición 3&lt;/dd&gt;<br>
+                  &lt;/dl&gt;<br>
+                </code>
+                <div class="resultado-hidden">
+                    <dl>
+                        <dt>Término 1</dt>
+                        <dd>Definición 1</dd>
+                        <dt>Término 2</dt>
+                        <dd>Definición 2</dd>
+                        <dt>Término 3</dt>
+                        <dd>Definición 3</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Eva Angelina Fernández Muñoz</p>
+    </footer>
+</body>
+
+</html>

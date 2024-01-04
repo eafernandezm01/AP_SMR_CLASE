@@ -20,6 +20,7 @@ nav{
 nav > a{
     color: #e2d5c1;
     text-decoration: none;
+    margin-right: 10px;
 }
 main{
     padding: 0 5%;
@@ -61,9 +62,10 @@ main{
  margin-top: 2%;
 }
 
-.section > h2{
+.section > h3{
     color: #6743a5;
     border-bottom: 4px solid #6743a5;
+    font-size: 1.3em;
 }
 
 footer{
@@ -83,3 +85,14 @@ footer>p{
     color: #6743a5;
 }
 
+.fixed-bottom{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.titulo{
+    color: #000;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}

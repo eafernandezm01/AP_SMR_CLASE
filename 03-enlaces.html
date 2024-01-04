@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>AP_SMR_CLASE</title>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>ETIQUETAS HTML</h1>
+    </header>
+    <nav>
+        <a href="./01-elementosTexto.html">Elementos de texto</a>
+        <a href="./02-listas.html">Listas</a>
+        <a href="./03-enlaces.html">Enlaces</a>
+    </nav>
+    <main>
+        <h2 class="titulo">ENLACES Y NAVEGACIÓN</h2>
+        <div class="section">
+            <h3>ENLACES</h3>
+            <p>La etiqueta &lt;a&gt;, permite crear un enlace a otra página, un correo o un teléfono.
+            </p>
+            <div class="ejemplo">
+                <code>
+                    &lt;a href="http://www.google.com" target="_blank"&gt;Ir a google&lt;/a&gt;<br>
+                    &lt;a href="mailto:eafernandezm01@educarex.es"&gt;eafernandezm01@educarex.es&lt;/a&gt;<br>
+                    &lt;a href="tel:+34666555444"&gt;666555444&lt;/a&gt;<br>
+                </code>
+                <div class="resultado-hidden">
+                    <a href="http://www.google.com" target="_blank">Ir a google</a>
+                    <br>
+                    <a href="mailto:eafernandezm01@educarex.es">eafernandezm01@educarex.es</a>
+                    <br>
+                    <a href="tel:+34666555444">666555444</a>
+                </div>
+            </div>
+            <p>El atributo <span class="violeta">target</span> puede contener:</p>
+            <ul>
+                <li>"_blank": La página se abre en otra pestaña.</li>
+                <li>"_self": En la misma pestaña (si no se especifica target, lo realiza sobre la misma pestaña)</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>NAVEGACIÓN</h3>
+            <p>La etiqueta &lt;nav&gt;, permite crear un barra de navegación. Los enlaces a otras páginas se especifican
+                dentro de la etiqueta.
+            </p>
+            <div class="ejemplo">
+                <code>
+                    &lt;nav&gt;<br>
+                    &lt;a href="./01-elementosTexto.html"&gt;Elementos de texto&lt;/a&gt;<br>
+                    &lt;a href="./02-listas.html"&gt;Listas&lt;/a&gt;<br>
+                    &lt;a href="./03-enlaces.html"&gt;Enlaces&lt;/a&gt;<br>
+                    &lt;/nav&gt;<br>
+                </code>
+                <div class="resultado-hidden">
+                    <nav>
+                        <a href="./01-elementosTexto.html">Elementos de texto</a>
+                        <a href="./02-listas.html">Listas</a>
+                        <a href="./03-enlaces.html">Enlaces</a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Eva Angelina Fernández Muñoz</p>
+    </footer>
+</body>
+
+</html>

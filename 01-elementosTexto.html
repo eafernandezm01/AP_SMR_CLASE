@@ -15,11 +15,15 @@
     </header>
     <nav>
         <a href="./01-elementosTexto.html">Elementos de texto</a>
+        <a href="./02-listas.html">Listas</a>
+        <a href="./03-enlaces.html">Enlaces</a>
     </nav>
     <main>
+        <h2 class="titulo">ELEMENTOS DE TEXTO</h2>
         <div class="section">
-            <h2>ENCABEZADOS</h2>
-            <p>Los encabezados en HTML permiten poner títulos y subtítulos.. Los niveles van de &lt;h1&gt; a &lt;h6&gt;</p>
+            <h3>ENCABEZADOS</h3>
+            <p>Los encabezados en HTML permiten poner títulos y subtítulos.. Los niveles van de &lt;h1&gt; a &lt;h6&gt;
+            </p>
             <div class="ejemplo">
                 <code>
                         &lt;h1&gt;Encabezado h1&lt;/h1&gt;<br>
@@ -40,8 +44,10 @@
             </div>
         </div>
         <div class="section">
-            <h2>PÁRRAFOS</h2>
-            <p>Para los párrafos en HTML se utiliza &lt;p&gt;</p>
+            <h3>PÁRRAFOS</h3>
+            <p>Para los párrafos en HTML se utiliza &lt;p&gt;.<br>
+                Si queremos usar un salto de línea usamos &lt;br&gt;<br>
+                Si queremos añadir un espacio en blanco usamos <code>&nbsp;</code></p>
             <div class="ejemplo">
                 <code>
                     &lt;p&gt;Esto es un párrafo&lt;/p&gt;
@@ -53,7 +59,7 @@
         </div>
 
         <div class="section">
-            <h2>TEXTO MUY IMPORTANTE</h2>
+            <h3>TEXTO MUY IMPORTANTE</h3>
             <p>Para resaltar la importancia de un texto usamos &lt;strong&gt;</p>
             <div class="ejemplo">
                 <code>
@@ -66,7 +72,7 @@
         </div>
 
         <div class="section">
-            <h2>TEXTO ENFATIZADO</h2>
+            <h3>TEXTO ENFATIZADO</h3>
             <p>Para enfatizar un texto usamos &lt;em&gt;</p>
             <div class="ejemplo">
                 <code>
@@ -79,7 +85,7 @@
         </div>
 
         <div class="section">
-            <h2>TEXTO CON OTRO FORMATO</h2>
+            <h3>TEXTO CON OTRO FORMATO</h3>
             <p>Para poder dar un estilo a una parte de un texto usamos &lt;span&gt;</p>
             <div class="ejemplo">
                 <code>
@@ -93,7 +99,7 @@
 
 
         <div class="section">
-            <h2>TEXTO CON OTRO FORMATO</h2>
+            <h3>TEXTO CON OTRO FORMATO</h3>
             <p>Para poder dar un estilo a una parte de un texto usamos &lt;span&gt;</p>
             <div class="ejemplo">
                 <code>
@@ -105,8 +111,85 @@
             </div>
         </div>
 
+        <div class="section">
+            <h3>ABREVIATURA</h3>
+            <p>Para escribir una abreviatura &lt;abbr&gt;</p>
+            <div class="ejemplo">
+                <code>
+                    &lt;abbr title="Sistemas Microinformáticos y Redes"&gt;SMR&lt;/abbr&gt;
+                </code>
+                <div class="resultado-hidden">
+                    <abbr title="Sistemas Microinformáticos y Redes">SMR</abbr>
+                </div>
+            </div>
+        </div>
 
+        <div class="section">
+            <h3>CITA</h3>
+            <p>Para escribir una cita &lt;cite&gt;</p>
+            <div class="ejemplo">
+                <code>
+                    &lt;p&gt;&lt;cite&gt;El Hobbit&lt;/cite&gt;, de J.R.R. Tolkien&lt;/p&gt;
+                </code>
+                <div class="resultado-hidden">
+                    <cite>El Hobbit</cite>, de J.R.R. Tolkien
+                </div>
+            </div>
+        </div>
 
+        <div class="section">
+            <h3>DIRECCIÓN FÍSICA</h3>
+            <p>Para escribir una dirección física &lt;address&gt;</p>
+            <div class="ejemplo">
+                <code>
+                    &lt;address&gt;
+                    C/ Antonio Mª Concha&lt;br&gt;
+                    10300 Navalmoral de la Mata&lt;br&gt;
+                    Cáceres
+                    &lt;/address&gt;
+                </code>
+                <div class="resultado-hidden">
+                    <address>
+                        C/ Antonio Mª Concha<br>
+                        10300 Navalmoral de la Mata<br>
+                        Cáceres
+                    </address>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>CÓDIGO</h3>
+            <p>Para poner código de ejemplo usamos &lt;code&gt;</p>
+            <div class="ejemplo">
+                <code>
+                    &lt;code&gt;
+                    console.log ('Hola mundo');
+                    &lt;/code&gt;
+                </code>
+                <div class="resultado-hidden">
+                    <code>
+                        console.log ('Hola mundo');
+                    </code>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>SUPER ÍNDICE Y SUB ÍNDICE</h3>
+            <p>Para poner poner un super índice usamos &lt;sup&gt; y para un sub índice usamos &lt;sub&gt;</p>
+            <div class="ejemplo">
+
+                <code>
+                    &lt;p&gt;100 m&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;<br>
+                    &lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
+                </code>
+                <div class="resultado-hidden">
+                    <p>100 m<sup>2</sup></p>
+                    <p>H<sub>2</sub>O</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <p>© 2024 Eva Angelina Fernández Muñoz</p>
