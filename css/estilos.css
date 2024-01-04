@@ -125,4 +125,13 @@ footer>p {
     .ejemplo>div {
         margin: 10px 10px;
     }
+ 
+}
+
+@media (max-width: 1000px) {
+    .tabla{
+        max-width: 500px;
+        width: calc(100% - 100px);
+        overflow: auto;
+    }
 }
